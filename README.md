@@ -1,2 +1,4 @@
-# project1-sample2
-A game where you guess the shuffled word
+# Scram
+
+Guess a word after it has been scrambled.
+

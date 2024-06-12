@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scram</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<script type="module" src="js/GameManager.js"></script>
+	<script type="module" src="js/DOMManager.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Scram</h1>
+        <p>Try to guess the word that has been scrambled!</p>
+    </header>
+
+    <main>	
+		<section id="score-section" class="game-section">
+			<div>
+				<label for="word-length-slider">Word Length:</label>
+				<input type="range" id="word-length-slider" min="3" max="9" value="6" />
+			</div>
+			<p>Current Score: 0</p>
+		</section>
+
+		<section id="word-section" class="game-section">
+			<h3></h3>
+			<label for="guess-input">Your Guess:</label>
+    		<input type="text" id="guess-input" autocomplete="off"/>
+			<button id="check-button" class="game-button">Check</button>
+			<button id="new-button" class="game-button">New Word</button>
+		</section>
+	
+		<section id="hint-section" class="game-section">
+			<button id="hint-button" class="game-button">Get Hint</button>
+			<p></p>
+		</section>
+		
+		<script type="module" src="js/scram.js"></script>
+	</main>
+</body>
+</html>
